@@ -1,0 +1,161 @@
+//colores
+$bgUno: #505050;
+$bgDos: #2a9d8f;
+$textUno: #ffffff;
+$textDos: #000000;
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Tulpen One', cursive;
+    }
+
+  //Navbar
+.my-navbar{
+    background-color: $bgUno;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+
+    .my-name{
+        color: $textUno;
+        margin: auto 70px;
+        align-items: center;
+        line-height: content;
+        h2{
+            font-size: 35px;
+            align-items:center;
+        }
+    }
+
+    .my-media-social{
+        margin: 0px 70px;
+        a i{
+            color: $textUno;
+            font-size: 20px;
+            margin: 5px;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            padding: 10px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+    }
+    .fa-facebook-f{
+        background-color: #3b5998;
+    }
+    .fa-instagram{
+        background:linear-gradient(#515bd4,#8134af,#dd2a7b,#f58529)
+    }
+    .fa-linkedin-in{
+        background-color:#0e76a8;
+    }
+    .fa-github{
+        background-color: #171515;
+    }
+    .fa-whatsapp{
+        background-color: #00bb2d;
+    }
+}
+
+//Banner
+.video{
+    display: block;
+    width: 100%;
+    position: absolute;
+    z-index: -10;
+}
+.banner{
+    height: 100vh;
+}
+
+//About
+.about{
+    background-color: $bgDos;
+    color: $textDos;
+    
+    .i{
+    
+        h2{
+            font-size: 2.5rem;  
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        img{
+            height: 12rem;
+        }
+        p{
+            font-size: 1rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    }
+}
+
+
+/*Footer*/
+.my-footer{
+    background-color: $bgUno;
+    color: $textUno;
+    padding: 50px 25px;
+    display: flex;
+    justify-content: space-between;
+    
+    p{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 15px;
+    }
+}
+
+.my-about{
+width: 33%;
+text-align: center;
+}
+.my-image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    padding-right: 10px;
+}
+.my-div-about{
+    display: flex;
+}
+.my-contact{
+    width: 33%;
+    padding: 10px;
+    text-align: center;
+}
+.phone{
+    padding-top: 20px;
+}
+
+.my-footer-media-social{
+    width: 33%;
+    padding: 10px;
+    text-align: center;
+
+    a i{
+        color: #ffffff;
+        font-size: 25px;
+        margin: 5px;
+        width: 46px;
+        text-align: center;
+        padding: 10px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+}
+
+.my-icons{
+    padding-top: 15px;
+}
