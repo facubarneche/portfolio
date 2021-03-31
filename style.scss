@@ -1,38 +1,42 @@
-//colores
-$bgUno: #505050;
-$bgDos: #2a9d8f;
-$textUno: #ffffff;
-$textDos: #000000;
+//Colors
+$bg1: #505050;
+$bg2: #006d77;
+$text1: #ffffff;
+$text2: #505050;
+//Fonts
+$font1: "Tulpen One";
+$font2: "franklin gothic Medium";
 
-*{
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: 'Tulpen One', cursive;
-    }
+    font-family: "franklin gothic Medium", $font1, cursive;
+}
 
-  //Navbar
-.my-navbar{
-    background-color: $bgUno;
+//Navbar
+.my-navbar {
+    background-color: $bg1;
     padding: 5px;
     display: flex;
     justify-content: space-between;
 
-    .my-name{
-        color: $textUno;
+    .my-name {
+        color: $text1;
         margin: auto 70px;
         align-items: center;
         line-height: content;
-        h2{
+        h2 {
             font-size: 35px;
-            align-items:center;
+            align-items: center;
+            font-family: $font1, cursive;
         }
     }
 
-    .my-media-social{
+    .my-media-social {
         margin: 0px 70px;
-        a i{
-            color: $textUno;
+        a i {
+            color: $text1;
             font-size: 20px;
             margin: 5px;
             width: 40px;
@@ -46,75 +50,155 @@ $textDos: #000000;
             -o-border-radius: 50%;
         }
     }
-    .fa-facebook-f{
-        background-color: #3b5998;
-    }
-    .fa-instagram{
-        background:linear-gradient(#515bd4,#8134af,#dd2a7b,#f58529)
-    }
-    .fa-linkedin-in{
-        background-color:#0e76a8;
-    }
-    .fa-github{
-        background-color: #171515;
-    }
-    .fa-whatsapp{
-        background-color: #00bb2d;
-    }
+}
+.fa-facebook-f {
+    background-color: #3b5998;
+}
+.fa-instagram {
+    background: linear-gradient(#515bd4, #8134af, #dd2a7b, #f58529);
+}
+.fa-linkedin-in {
+    background-color: #0e76a8;
+}
+.fa-github {
+    background-color: #171515;
+}
+.fa-whatsapp {
+    background-color: #00bb2d;
 }
 
 //Banner
-.video{
+.video {
     display: block;
     width: 100%;
     position: absolute;
     z-index: -10;
 }
-.banner{
-    height: 100vh;
-}
-
-//About
-.about{
-    background-color: $bgDos;
-    color: $textDos;
-    
-    .i{
-    
-        h2{
-            font-size: 2.5rem;  
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-        img{
-            height: 12rem;
-        }
-        p{
-            font-size: 1rem;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.banner {
+    height: 92vh;
+    background-color: $bg2;
+    opacity: .9;
+    .menu {
+        
+        h1,
+        h2 {
+            font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+            font-size: 3rem;
+            color: $text2;
         }
     }
 }
 
+//Skills
+
+.skill {
+    background-color: $bg1;
+    h2 {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 3rem;
+    }
+    .container {
+        .row {
+            height: 100px;
+            padding: 80px 180px;
+            align-content: center;
+            text-align: center;
+
+            i {
+                font-size: 4rem;
+                padding: 20px;
+                width: 120px;
+                transition: all 1s ease-out;
+                -webkit-transition: all 1s ease-out;
+                -moz-transition: all 1s ease-out;
+                -ms-transition: all 1s ease-out;
+                -o-transition: all 1s ease-out;
+            }
+            i:hover {
+                transform: scale(1.5);
+                transition: all 2s ease-out;
+                -webkit-transform: scale(1.5);
+                -moz-transform: scale(1.5);
+                -ms-transform: scale(1.5);
+                -o-transform: scale(1.5);
+                -webkit-transition: all 2s ease-out;
+                -moz-transition: all 2s ease-out;
+                -ms-transition: all 2s ease-out;
+                -o-transition: all 2s ease-out;
+            }
+        }
+    }
+}
+
+//About
+.about {
+    background-color: $bg2;
+    color: $text2;
+
+    .i {
+        h2 {
+            font-size: 2.5rem;
+            font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        }
+        img {
+            height: 15rem;
+            width: 15rem;
+            object-fit: cover;
+        }
+        p {
+            font-size: 1rem;
+            font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        }
+    }
+    .my-photo {
+        filter: grayscale(90%);
+        -webkit-filter: grayscale(90%);
+    }
+}
+//Projects
+.div-project {
+    background-color: $bg2;
+    .projects {
+        background-color: $bg1;
+        border: 1px solid black;
+        // clip-path: polygon(0 0%, 0 100%, 100% 85%, 100% 0);
+        padding: 50px 100px 100px;
+
+        h2 {
+            font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+            font-size: 4rem;
+            padding: 10px;
+        }
+        p {
+            font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+            font-size: 1rem;
+        }
+        .card{
+            background-color: $bg2;
+           
+        }
+    }
+}
 
 /*Footer*/
-.my-footer{
-    background-color: $bgUno;
-    color: $textUno;
-    padding: 50px 25px;
+.my-footer {
+    background-color: $bg1;
+    color: $text1;
+    padding: 10px 25px;
     display: flex;
-    justify-content: space-between;
-    
-    p{
-        font-family: 'Times New Roman', Times, serif;
+    justify-content: space-around;
+
+    p {
+        font-family: "Times New Roman", Times, serif;
         font-size: 15px;
     }
 }
 
-.my-about{
-width: 33%;
-text-align: center;
+.my-about {
+    width: 33%;
+    text-align: center;
 }
-.my-image{
+.my-image {
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -124,24 +208,21 @@ text-align: center;
     -o-border-radius: 50%;
     padding-right: 10px;
 }
-.my-div-about{
+.my-div-about {
     display: flex;
 }
-.my-contact{
+.my-contact {
     width: 33%;
-    padding: 10px;
+    padding: 10px 60px;
     text-align: center;
 }
-.phone{
-    padding-top: 20px;
-}
 
-.my-footer-media-social{
+.my-footer-media-social {
     width: 33%;
     padding: 10px;
     text-align: center;
 
-    a i{
+    a i {
         color: #ffffff;
         font-size: 25px;
         margin: 5px;
@@ -156,6 +237,6 @@ text-align: center;
     }
 }
 
-.my-icons{
+.my-icons {
     padding-top: 15px;
 }
