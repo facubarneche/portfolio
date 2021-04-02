@@ -1,11 +1,15 @@
 //Colors
 $bg1: #505050;
-$bg2: #006d77;
-$text1: #ffffff;
+$bg2: #0b2044;
+$text1: #c0adad;
 $text2: #505050;
+$text3: #f8f8f8;
+$text4: #48cae4;
 //Fonts
 $font1: "Tulpen One";
 $font2: "franklin gothic Medium";
+//border prueba
+$border: 2px solid yellow;
 
 * {
     padding: 0px;
@@ -22,7 +26,7 @@ $font2: "franklin gothic Medium";
     justify-content: space-between;
 
     .my-name {
-        color: $text1;
+        color: $text3;
         margin: auto 70px;
         align-items: center;
         line-height: content;
@@ -36,7 +40,7 @@ $font2: "franklin gothic Medium";
     .my-media-social {
         margin: 0px 70px;
         a i {
-            color: $text1;
+            color: $text3;
             font-size: 20px;
             margin: 5px;
             width: 40px;
@@ -51,20 +55,83 @@ $font2: "franklin gothic Medium";
         }
     }
 }
-.fa-facebook-f {
+
+//social medias
+.fa-facebook-f{
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.fa-instagram{
+    transition: 0.5;
+    -webkit-transition: 0.5;
+    -moz-transition: 0.5;
+    -ms-transition: 0.5;
+    -o-transition: 0.5;
+}
+.fa-linkedin-in{
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.fa-github{
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.fa-whatsapp{
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.fa-facebook-f:hover {
     background-color: #3b5998;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
 }
-.fa-instagram {
+.fa-instagram:hover{
     background: linear-gradient(#515bd4, #8134af, #dd2a7b, #f58529);
+    transition: 6.5;
+    -webkit-transition: 6.5;
+    -moz-transition: 6.5;
+    -ms-transition: 6.5;
+    -o-transition: 6.5;
 }
-.fa-linkedin-in {
+.fa-linkedin-in:hover {
     background-color: #0e76a8;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
 }
-.fa-github {
+.fa-github:hover {
     background-color: #171515;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
 }
-.fa-whatsapp {
+.fa-whatsapp:hover {
     background-color: #00bb2d;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
 }
 
 //Banner
@@ -77,14 +144,35 @@ $font2: "franklin gothic Medium";
 .banner {
     height: 92vh;
     background-color: $bg2;
-    opacity: .9;
+    opacity: 0.9;
     .menu {
-        
-        h1,
+        padding: 15vh;
+        small {
+            color: $text4;
+            font-size: 1.2rem;
+        }
+        h1 {
+            font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+            font-size: 5rem;
+            color: $text3;
+        }
         h2 {
             font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
             font-size: 3rem;
-            color: $text2;
+            color: $text1;
+        }
+        h6 {
+            font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+            font-size: 1.25rem;
+            color: $text1;
+            width: 50%;
+        }
+        a {
+            border: $text4 1px solid;
+            color: $text4;
+        }
+        a:hover {
+            background-color: #48cae43a;
         }
     }
 }
@@ -93,6 +181,7 @@ $font2: "franklin gothic Medium";
 
 .skill {
     background-color: $bg1;
+
     h2 {
         font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
         font-size: 3rem;
@@ -136,6 +225,7 @@ $font2: "franklin gothic Medium";
     color: $text2;
 
     .i {
+        padding: 50px 100px;
         h2 {
             font-size: 2.5rem;
             font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -173,9 +263,8 @@ $font2: "franklin gothic Medium";
             font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
             font-size: 1rem;
         }
-        .card{
+        .card {
             background-color: $bg2;
-           
         }
     }
 }

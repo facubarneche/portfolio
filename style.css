@@ -18,7 +18,7 @@
 }
 
 .my-navbar .my-name {
-  color: #ffffff;
+  color: #f8f8f8;
   margin: auto 70px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -39,7 +39,7 @@
 }
 
 .my-navbar .my-media-social a i {
-  color: #ffffff;
+  color: #f8f8f8;
   font-size: 20px;
   margin: 5px;
   width: 40px;
@@ -54,24 +54,89 @@
 }
 
 .fa-facebook-f {
-  background-color: #3b5998;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
 .fa-instagram {
-  background: -webkit-gradient(linear, left top, left bottom, from(#515bd4), color-stop(#8134af), color-stop(#dd2a7b), to(#f58529));
-  background: linear-gradient(#515bd4, #8134af, #dd2a7b, #f58529);
+  transition: 0.5;
+  -webkit-transition: 0.5;
+  -moz-transition: 0.5;
+  -ms-transition: 0.5;
+  -o-transition: 0.5;
 }
 
 .fa-linkedin-in {
-  background-color: #0e76a8;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
 .fa-github {
-  background-color: #171515;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
 .fa-whatsapp {
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.fa-facebook-f:hover {
+  background-color: #3b5998;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.fa-instagram:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#515bd4), color-stop(#8134af), color-stop(#dd2a7b), to(#f58529));
+  background: linear-gradient(#515bd4, #8134af, #dd2a7b, #f58529);
+  transition: 6.5;
+  -webkit-transition: 6.5;
+  -moz-transition: 6.5;
+  -ms-transition: 6.5;
+  -o-transition: 6.5;
+}
+
+.fa-linkedin-in:hover {
+  background-color: #0e76a8;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.fa-github:hover {
+  background-color: #171515;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.fa-whatsapp:hover {
   background-color: #00bb2d;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
 .video {
@@ -83,15 +148,45 @@
 
 .banner {
   height: 92vh;
-  background-color: #006d77;
-  opacity: .9;
+  background-color: #0b2044;
+  opacity: 0.9;
 }
 
-.banner .menu h1,
+.banner .menu {
+  padding: 15vh;
+}
+
+.banner .menu small {
+  color: #48cae4;
+  font-size: 1.2rem;
+}
+
+.banner .menu h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 5rem;
+  color: #f8f8f8;
+}
+
 .banner .menu h2 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 3rem;
-  color: #505050;
+  color: #c0adad;
+}
+
+.banner .menu h6 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.25rem;
+  color: #c0adad;
+  width: 50%;
+}
+
+.banner .menu a {
+  border: #48cae4 1px solid;
+  color: #48cae4;
+}
+
+.banner .menu a:hover {
+  background-color: #48cae43a;
 }
 
 .skill {
@@ -136,8 +231,12 @@
 }
 
 .about {
-  background-color: #006d77;
+  background-color: #0b2044;
   color: #505050;
+}
+
+.about .i {
+  padding: 50px 100px;
 }
 
 .about .i h2 {
@@ -163,7 +262,7 @@
 }
 
 .div-project {
-  background-color: #006d77;
+  background-color: #0b2044;
 }
 
 .div-project .projects {
@@ -184,13 +283,13 @@
 }
 
 .div-project .projects .card {
-  background-color: #006d77;
+  background-color: #0b2044;
 }
 
 /*Footer*/
 .my-footer {
   background-color: #505050;
-  color: #ffffff;
+  color: #c0adad;
   padding: 10px 25px;
   display: -webkit-box;
   display: -ms-flexbox;
