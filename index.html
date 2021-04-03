@@ -20,7 +20,7 @@
   <title>Mi Portafolio</title>
 </head>
 
-<body>
+<body class="conteiner">
   <!--Navbar-->
   <nav class="my-navbar">
     <div class="my-name">
@@ -52,90 +52,19 @@
     </div>
   </header>
 
-
-  <!--Skills-->
-  <div class="skill p-5">
-    <div>
-      <h2 class="m-0 text-center p-5">Skills</h2>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-4">
-          <div class="div-i">
-            <i class="fab fa-html5"></i>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="div-i">
-            <i class="fab fa-css3-alt"></i>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="div-i">
-            <i class="fab fa-js-square"></i>
-          </div>
-        </div>
-       
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-4">
-          <div class="div-i">
-            <i class="fab fa-bootstrap"></i>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="div-i">
-            <i class="fab fa-sass"></i>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="div-i">
-            <i class="fab fa-git-alt"></i>
-          </div>
-        </div>
-      
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-4">
-          <div class="div-i">
-            <i class="fab fa-react"></i>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="div-i">
-            <i class="fab fa-wordpress"></i>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="div-i">
-            <i class="fab fa-figma"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
   <!--About-->
 
-  <div class="container-fluid p-5 about">
+  <div class="container-fluid about">
     <div class="i container d-flex">
       <div class="p-5">
-        <img src="https://m.eltiempo.com/uploads/2018/04/16/5ad56c0963988.jpeg" alt="el pibe"
-          class="my-photo rounded-circle">
+        <img src="https://m.eltiempo.com/uploads/2018/04/16/5ad56c0963988.jpeg" alt="el pibe" class="my-photo">
       </div>
       <div class="container text-center p-5 ">
-        <div>
-          <h2>About</h2>
+        <div class="d-flex justify-content-center">
+          <h2 class="p-3">About</h2>
+          <span class="p-4">______________________<span>
         </div>
-        <p class="m-0 container">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, debitis.
+        <p class="container px-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, debitis.
           Cumque est quasi
           quaerat,
           impedit esse cum, nulla deleniti, itaque consectetur libero quisquam provident perferendis quia
@@ -151,6 +80,90 @@
         <a href="google.com" class="btn btn-secondary mt-4">Download Resume</a>
       </div>
     </div>
+  </div>
+
+  <!--Skills-->
+  <div class="d-flex skill justify-content-around pb-5">
+    <div class="skill">
+      <div class="d-flex container">
+        <h2 class="">Skills</h2>
+        <span class="text-white m-0 p-2">______________________</span>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <div class="div-i">
+              <i class="fab fa-html5"></i>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="div-i">
+              <i class="fab fa-css3-alt"></i>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="div-i">
+              <i class="fab fa-js-square"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <div class="div-i">
+              <i class="fab fa-bootstrap"></i>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="div-i">
+              <i class="fab fa-sass"></i>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="div-i">
+              <i class="fab fa-git-alt"></i>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <div class="div-i">
+              <i class="fab fa-react"></i>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="div-i">
+              <i class="fab fa-wordpress"></i>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="div-i">
+              <i class="fab fa-figma"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-name d-flex w-25 align-items-center">
+      <h2 class="h2-1" hidden>HTML 5</h2>
+      <h2 hidden>Css 3</h2>
+      <h2 hidden>Javascript</h2>
+      <h2 hidden>Bootstrap 5</h2>
+      <h2 hidden>Sass</h2>
+      <h2 hidden>Git</h2>
+      <h2 hidden>React JS</h2>
+      <h2 hidden>WordPress</h2>
+      <h2 hidden>Figma</h2>
+    </div>
+
   </div>
 
   <!--Projects-->
@@ -249,4 +262,5 @@
     </div>
   </footer>
 </body>
+
 </html>
