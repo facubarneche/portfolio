@@ -1,12 +1,12 @@
 //Colors
 $bg1: #2c2828;
 $bg2: #0b2044;
+$bg3: #02173b;
 $text1: #0b2044;
 $text2: #2c2828;
 $text3: #f8f8f8;
 $text4: #48cae4;
 //Fonts
-
 $font2: "Merriweather", serif, "franklin gothic Medium";
 
 //border prueba
@@ -287,21 +287,41 @@ $border: 2px solid yellow;
 article {
     .text-proyect {
         width: 50%;
+        height: max-content;
+        padding: 1rem;
+        margin: 0rem 2rem;
+        background-color: $bg3;
+        color: $text3;
         h3 {
-            color: $text3;
-            p {
-                font-size: 1rem;
-            }
+            color: $text4;
+        }
+        p {
+            font-style: italic;
+            font-size: 1rem;
         }
     }
-        a {
-            border: 2px solid $text4;
-            img {
-                height: 25rem;
-                width: 42rem;
-            }
+    a {
+        border: 2px solid $text4;
+        @include transition();
+
+        img {
+            height: 25rem;
+            width: 42rem;
+            filter: grayscale(90%);
+            -webkit-filter: grayscale(90%);
+            @include transition();
+        }
+        img:hover {
+            filter: none;
+            -webkit-filter: none;
+            @include transition();
         }
     }
+    a:hover {
+        box-shadow: $text3 1px 5px 10px;
+        @include transition();
+    }
+}
 
 /*Footer*/
 .my-footer {
@@ -312,8 +332,9 @@ article {
     justify-content: space-around;
 
     p {
-        font-family: "Times New Roman", Times, serif;
-        font-size: 15px;
+        font-family: $font2;
+        font-size: 1rem;
+        font-style: italic;
     }
 }
 

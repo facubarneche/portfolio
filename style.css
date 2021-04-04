@@ -376,23 +376,63 @@
 
 article .text-proyect {
   width: 50%;
-}
-
-article .text-proyect h3 {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 1rem;
+  margin: 0rem 2rem;
+  background-color: #02173b;
   color: #f8f8f8;
 }
 
-article .text-proyect h3 p {
+article .text-proyect h3 {
+  color: #48cae4;
+}
+
+article .text-proyect p {
+  font-style: italic;
   font-size: 1rem;
 }
 
 article a {
   border: 2px solid #48cae4;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
 article a img {
   height: 25rem;
   width: 42rem;
+  filter: grayscale(90%);
+  -webkit-filter: grayscale(90%);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+article a img:hover {
+  filter: none;
+  -webkit-filter: none;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+article a:hover {
+  -webkit-box-shadow: #f8f8f8 1px 5px 10px;
+          box-shadow: #f8f8f8 1px 5px 10px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
 /*Footer*/
@@ -408,8 +448,9 @@ article a img {
 }
 
 .my-footer p {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 15px;
+  font-family: "Merriweather", serif, "franklin gothic Medium";
+  font-size: 1rem;
+  font-style: italic;
 }
 
 .my-about {
