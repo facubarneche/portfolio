@@ -30,7 +30,7 @@ $border: 2px solid yellow;
 //Navbar
 .my-navbar {
     background-color: $bg2;
-    padding: 5px;
+    padding: 0.3rem;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid gray;
@@ -38,7 +38,7 @@ $border: 2px solid yellow;
 
     .my-name {
         color: $text3;
-        margin: auto 70px;
+        margin: auto 5.6rem;
         align-items: center;
         line-height: content;
         h2 {
@@ -139,7 +139,7 @@ $border: 2px solid yellow;
         h6 {
             font-size: 1.25rem;
             color: $text4;
-            width: 50%;
+            width: 48%;
             font-style: italic;
         }
         a {
@@ -154,13 +154,19 @@ $border: 2px solid yellow;
 
 //About
 .about {
-    background-color: $bg2;
+    background-color: $bg1;
     color: $text3;
 }
 .i {
-    padding: 50px 100px;
     h2 {
         font-size: 3rem;
+        border-bottom: 1px solid $text4;
+        font-style: italic;
+        @include transition();
+    }
+    h2:hover {
+        padding: 0rem 3rem;
+        @include transition();
     }
     img {
         height: 22rem;
@@ -170,41 +176,40 @@ $border: 2px solid yellow;
     }
     p {
         font-size: 1rem;
+        font-style: italic;
     }
 }
 .my-photo {
     border-radius: 5%;
     filter: grayscale(90%);
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
     -webkit-filter: grayscale(90%);
     -webkit-border-radius: 5%;
     -moz-border-radius: 5%;
     -ms-border-radius: 5%;
     -o-border-radius: 5%;
+    @include transition();
 }
 .my-photo:hover {
     filter: none;
     -webkit-filter: none;
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
+    @include transition();
 }
 
 //Skills
 
 .skill {
-    background-color: $bg2;
+    background-color: $bg1;
 
     h2 {
         font-size: 3rem;
+        border-bottom: 1px solid $text4;
+        @include transition();
         color: $text3;
         font-style: italic;
+    }
+    h2:hover {
+        padding: 0rem 3rem;
+        @include transition();
     }
     .container {
         .row {
@@ -212,7 +217,7 @@ $border: 2px solid yellow;
             padding: 0.3rem;
             align-content: center;
             text-align: center;
-            
+
             div {
                 display: flex;
                 justify-content: center;
@@ -246,7 +251,7 @@ $border: 2px solid yellow;
                         -moz-transition: all 1s ease-out;
                         -ms-transition: all 1s ease-out;
                         -o-transition: all 1s ease-out;
-}
+                    }
                 }
                 .div-i:hover {
                     box-shadow: 2px 3px 10px $text4;
@@ -254,34 +259,49 @@ $border: 2px solid yellow;
             }
         }
     }
-    .skill-name{
-        h2{
+    .skill-name {
+        h2 {
             position: absolute;
         }
     }
 }
 
-
 //Projects
-.div-project {
-    background-color: $bg2;
-    .projects {
-        background-color: $bg1;
-        // clip-path: polygon(0 0%, 0 100%, 100% 85%, 100% 0);
-        padding: 50px 100px 100px;
 
-        h2 {
-            font-size: 3rem;
-            padding: 10px;
-        }
-        p {
-            font-size: 1rem;
-        }
-        .card {
-            background-color: $text4;
-        }
+.projects {
+    // clip-path: polygon(0 0%, 0 100%, 100% 85%, 100% 0);
+    background-color: $bg2;
+    color: $text3;
+    h2 {
+        font-size: 3rem;
+        border-bottom: 1px solid $text4;
+        @include transition();
+        color: $text3;
+        font-style: italic;
+    }
+    h2:hover {
+        padding: 0rem 3rem;
+        @include transition();
     }
 }
+article {
+    .text-proyect {
+        width: 50%;
+        h3 {
+            color: $text3;
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+        a {
+            border: 2px solid $text4;
+            img {
+                height: 25rem;
+                width: 42rem;
+            }
+        }
+    }
 
 /*Footer*/
 .my-footer {
