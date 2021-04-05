@@ -1,6 +1,6 @@
 //Colors
 $bg1: #2c2828;
-$bg2: #0b2044;
+$bg2: #0a192f;
 $bg3: #02173b;
 $text1: #0b2044;
 $text2: #2c2828;
@@ -269,7 +269,7 @@ $border: 2px solid yellow;
 //Projects
 
 .projects {
-    background-color: $bg1;
+    background-color: $bg2;
     color: $text3;
     h2 {
         font-size: 3rem;
@@ -284,21 +284,29 @@ $border: 2px solid yellow;
     }
 }
 article {
+    display: flex;
     padding: 1rem;
+    justify-items: center;
+    align-items: center;
 
     .text-proyect {
         width: 50%;
-        height: max-content;
         padding: 1rem;
-        margin: 0rem 3rem;
-        background-color: #221f1f;
+        margin: 0rem 6rem;
         color: $text3;
+
         h3 {
+            font-size: 1.2rem;
+            color: $text3;
+            @include transition();
+        }
+        h3:hover {
             color: $text4;
+            @include transition();
         }
         p {
             font-style: italic;
-            font-size: 1rem;
+            font-size: 0.9rem;
         }
     }
     a {
@@ -326,7 +334,7 @@ article {
 
 /*Footer*/
 footer {
-    background-color: $bg1;
+    background-color: $bg2;
     text-align: center;
     padding: 2rem;
     padding-top: 7rem;
@@ -334,10 +342,17 @@ footer {
         color: $text3;
         font-style: italic;
         text-decoration: none;
+        font-size: 0.75rem;
         @include transition();
     }
     a:hover {
         color: $text4;
         @include transition();
     }
+}
+
+//Media Query
+
+@media (max-width: 600px) {
+
 }
