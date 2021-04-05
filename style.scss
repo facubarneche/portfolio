@@ -269,8 +269,7 @@ $border: 2px solid yellow;
 //Projects
 
 .projects {
-    // clip-path: polygon(0 0%, 0 100%, 100% 85%, 100% 0);
-    background-color: $bg2;
+    background-color: $bg1;
     color: $text3;
     h2 {
         font-size: 3rem;
@@ -285,12 +284,14 @@ $border: 2px solid yellow;
     }
 }
 article {
+    padding: 1rem;
+
     .text-proyect {
         width: 50%;
         height: max-content;
         padding: 1rem;
-        margin: 0rem 2rem;
-        background-color: $bg3;
+        margin: 0rem 3rem;
+        background-color: #221f1f;
         color: $text3;
         h3 {
             color: $text4;
@@ -301,7 +302,7 @@ article {
         }
     }
     a {
-        border: 2px solid $text4;
+        border: 2px solid $text2;
         @include transition();
 
         img {
@@ -324,63 +325,19 @@ article {
 }
 
 /*Footer*/
-.my-footer {
+footer {
     background-color: $bg1;
-    color: $text3;
-    padding: 10px 25px;
-    display: flex;
-    justify-content: space-around;
-
-    p {
-        font-family: $font2;
-        font-size: 1rem;
-        font-style: italic;
-    }
-}
-
-.my-about {
-    width: 33%;
     text-align: center;
-}
-.my-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    padding-right: 10px;
-}
-.my-div-about {
-    display: flex;
-}
-.my-contact {
-    width: 33%;
-    padding: 10px 60px;
-    text-align: center;
-}
-
-.my-footer-media-social {
-    width: 33%;
-    padding: 10px;
-    text-align: center;
-
-    a i {
+    padding: 2rem;
+    padding-top: 7rem;
+    a {
         color: $text3;
-        font-size: 25px;
-        margin: 5px;
-        width: 46px;
-        text-align: center;
-        padding: 10px;
-        border-radius: 50%;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%;
+        font-style: italic;
+        text-decoration: none;
+        @include transition();
     }
-}
-
-.my-icons {
-    padding-top: 15px;
+    a:hover {
+        color: $text4;
+        @include transition();
+    }
 }
