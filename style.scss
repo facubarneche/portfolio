@@ -20,17 +20,19 @@ $border: 2px solid yellow;
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
 }
+
 @mixin translate($a, $b) {
-    transform: translate($a, $b) scale(5);
-    -webkit-transform: translate($a, $b) scale(5);
-    -moz-transform: translate($a, $b) scale(5);
-    -ms-transform: translate($a, $b) scale(5);
-    -o-transform: translate($a, $b) scale(5);
-    transition: 0.5s all ease-in-out;
-    -webkit-transition: 0.5s all ease-in-out;
-    -moz-transition: 0.5s all ease-in-out;
-    -ms-transition: 0.5s all ease-in-out;
-    -o-transition: 0.5s all ease-in-out;
+    transform: translate($a, $b) scale(5) rotate(360deg);
+    -webkit-transform: translate($a, $b) scale(5) rotate(360deg);
+    -moz-transform: translate($a, $b) scale(5) rotate(360deg);
+    -ms-transform: translate($a, $b) scale(5) rotate(360deg);
+    -o-transform: translate($a, $b) scale(5) rotate(360deg);
+    transition: 1s all ease-in-out;
+    -webkit-transition: 1s all ease-in-out;
+    -moz-transition: 1s all ease-in-out;
+    -ms-transition: 1s all ease-in-out;
+    -o-transition: 1s all ease-in-out;
+    padding: 0px;
 }
 
 * {
@@ -169,8 +171,6 @@ $border: 2px solid yellow;
 .about {
     background-color: $bg1;
     color: $text3;
-}
-.i {
     h2 {
         font-size: 3rem;
         border-bottom: 1px solid $text4;
@@ -181,38 +181,41 @@ $border: 2px solid yellow;
         padding: 0rem 3rem;
         @include transition();
     }
-    img {
-        height: 22rem;
-        width: 20rem;
-        object-fit: cover;
-        background-color: $text4;
+    .i {
+        img {
+            height: 22rem;
+            width: 20rem;
+            object-fit: cover;
+            background-color: $text4;
+        }
+        p {
+            font-size: 1rem;
+            font-style: italic;
+        }
     }
-    p {
-        font-size: 1rem;
-        font-style: italic;
+    .my-photo {
+        border-radius: 5%;
+        filter: grayscale(90%);
+        -webkit-filter: grayscale(90%);
+        -webkit-border-radius: 5%;
+        -moz-border-radius: 5%;
+        -ms-border-radius: 5%;
+        -o-border-radius: 5%;
+        object-position: top;
+        @include transition();
     }
-}
-.my-photo {
-    border-radius: 5%;
-    filter: grayscale(90%);
-    -webkit-filter: grayscale(90%);
-    -webkit-border-radius: 5%;
-    -moz-border-radius: 5%;
-    -ms-border-radius: 5%;
-    -o-border-radius: 5%;
-    @include transition();
-}
-.my-photo:hover {
-    filter: none;
-    -webkit-filter: none;
-    @include transition();
+    .my-photo:hover {
+        filter: none;
+        -webkit-filter: none;
+        @include transition();
+    }
 }
 
 //Skills
 
 .skill {
     background-color: $bg1;
-
+    border: 1px transparent solid;
     h2 {
         font-size: 3rem;
         border-bottom: 1px solid $text4;
@@ -224,74 +227,70 @@ $border: 2px solid yellow;
         padding: 0rem 3rem;
         @include transition();
     }
-    .container {
-        .row {
+}
+.container {
+    .row {
+        align-content: center;
+        text-align: center;
+        justify-content: center;
+
+        div {
             display: flex;
-            padding: 0.3rem;
-            align-content: center;
-            text-align: center;
+            justify-content: center;
+            align-items: center;
+            padding: 0.3rem 0.3rem;
 
-            div {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: max-content;
-                padding: 0rem 0.3rem;
+            .div-i {
+                height: 150px;
+                width: 160px;
+                background-color: #221f1f;
 
-                .div-i {
-                    height: 8.5rem;
-                    width: 8.5rem;
-                    background-color: #221f1f;
-
-                    i {
-                        font-size: 4rem;
-                        transition: all 1s ease-out;
-                        -webkit-transition: all 1s ease-out;
-                        -moz-transition: all 1s ease-out;
-                        -ms-transition: all 1s ease-out;
-                        -o-transition: all 1s ease-out;
-                        color: $text4;
-                        padding: 2.2rem;
-                    }
-                    .fa-html5:hover {
-                        @include translate(750px, 150px);
-                    }
-                    .fa-css3-alt:hover {
-                        @include translate(600px, 150px);
-                    }
-                    .fa-js-square:hover {
-                        @include translate(460px, 150px);
-                    }
-                    .fa-bootstrap:hover {
-                        @include translate(755px, 0px);
-                    }
-                    .fa-sass:hover {
-                        @include translate(610px, 0px);
-                    }
-                    .fa-git-alt:hover {
-                        @include translate(460px, 0px);
-                    }
-                    .fa-react:hover {
-                        @include translate(750px, -150px);
-                    }
-                    .fa-wordpress:hover {
-                         @include translate(600px, -150px);
-                    }
-                    .fa-figma:hover {
-                         @include translate(460px,-150px);
-                       
-                    }
+                i {
+                    font-size: 4rem;
+                    transition: all 1s ease-out;
+                    -webkit-transition: all 1s ease-out;
+                    -moz-transition: all 1s ease-out;
+                    -ms-transition: all 1s ease-out;
+                    -o-transition: all 1s ease-out;
+                    color: $text4;
                 }
-                .div-i:hover {
-                    box-shadow: 2px 3px 10px $text4;
+                .fa-html5:hover {
+                    @include translate(750px, 150px);
                 }
+                .fa-css3-alt:hover {
+                    @include translate(600px, 150px);
+                }
+                .fa-js-square:hover {
+                    @include translate(460px, 150px);
+                }
+                .fa-bootstrap:hover {
+                    @include translate(755px, 0px);
+                }
+                .fa-sass:hover {
+                    @include translate(610px, 0px);
+                }
+                .fa-git-alt:hover {
+                    @include translate(460px, 0px);
+                }
+                .fa-react:hover {
+                    @include translate(750px, -150px);
+                }
+                .fa-wordpress:hover {
+                    @include translate(600px, -150px);
+                }
+                .fa-figma:hover {
+                    @include translate(460px, -150px);
+                }
+            }
+            .div-i:hover {
+                box-shadow: 2px 3px 10px $text4;
             }
         }
     }
-    .skill-name {
-        h2 {
-            position: absolute;
-        }
+}
+.skill-name {
+    h2 {
+        position: absolute;
     }
 }
 
@@ -382,5 +381,65 @@ footer {
 
 //Media Query
 
-// @media (max-width: 600px) {
-// }
+@media (max-width: 577px) {
+    //Navbar
+    .my-navbar {
+        .my-name {
+            display: none;
+            margin: auto;
+        }
+
+        .my-media-social {
+            margin: 0px;
+            width: 100%;
+            text-align: center;
+            a i {
+                font-size: 18px;
+                margin: 1px;
+            }
+        }
+    }
+
+    //Banner
+    .video {
+        height: 98vh;
+        object-fit: fill;
+    }
+    .banner {
+        .menu {
+            background-color: $bg2;
+            padding: 2rem;
+            small {
+                font-size: 0.82rem;
+            }
+            h1 {
+                font-size: 2.5rem;
+            }
+            h2 {
+                font-size: 1.3rem;
+            }
+            h6 {
+                font-size: 0.9rem;
+                width: 67%;
+            }
+        }
+    }
+    //About
+    .about {
+        display: block;
+        padding-top: 2rem;
+        h2 {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 0.9rem;
+        }
+        .i {
+            padding: 3rem;
+            img {
+                height: 18rem;
+                width: 15rem;
+            }
+        }
+    }
+}
