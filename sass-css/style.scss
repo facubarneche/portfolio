@@ -263,22 +263,22 @@ $border: 2px solid yellow;
                         color: $text4;
                     }
                     .fa-html5:hover {
-                        @include scale(2, 360deg);
+                        @include scale(2, 0deg);
                     }
                     .fa-css3-alt:hover {
-                        @include scale(2, 360deg);
+                        @include scale(2, 0deg);
                     }
                     .fa-js-square:hover {
-                        @include scale(2, 360deg);
+                        @include scale(2, 0deg);
                     }
                     .fa-bootstrap:hover {
-                        @include scale(2, 360deg);
+                        @include scale(2, 0deg);
                     }
                     .fa-sass:hover {
-                        @include scale(1.8, 360deg);
+                        @include scale(1.7, 0deg);
                     }
                     .fa-git-alt:hover {
-                        @include scale(2, 360deg);
+                        @include scale(2, 0deg);
                     }
                     .fa-react:hover {
                         @include scale(2, 360deg);
@@ -287,7 +287,7 @@ $border: 2px solid yellow;
                         @include scale(2, 360deg);
                     }
                     .fa-figma:hover {
-                        @include scale(2, 360deg);
+                        @include scale(2, 0deg);
                     }
                 }
                 .div-i:hover {
@@ -296,33 +296,29 @@ $border: 2px solid yellow;
             }
         }
     }
+
+    .hiddenSkills{
+        position: absolute;
+        right: 25%;
+    }
+
     .hidSkills {
         color: $text3;
         text-align: center;
-        margin: auto;
+        margin: auto;        
     }
 
     .overAnimacion {
         @include scale(5, 0deg);
         color: $text4;
-        transition: 1.5s all ease-in-out;
-        -webkit-transition: 1.5s all ease-in-out;
-        -moz-transition: 1.5s all ease-in-out;
-        -ms-transition: 1.5s all ease-in-out;
-        -o-transition: 1.5s all ease-in-out;
+      
     }
     .outAnimacion {
-        transform: scale(0);
-        -webkit-transform: scale(0);
-        -moz-transform: scale(0);
-        -ms-transform: scale(0);
-        -o-transform: scale(0);
-        transition: 1.5s all ease-in-out;
-        -webkit-transition: 1.5s all ease-in-out;
-        -moz-transition: 1.5s all ease-in-out;
-        -ms-transition: 1.5s all ease-in-out;
-        -o-transition: 1.5s all ease-in-out;
+        @include scale(0, 0deg)
     }
+}
+.leyend{
+    font-size: 10px
 }
 
 //Projects

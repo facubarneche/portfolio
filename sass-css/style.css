@@ -334,11 +334,11 @@
 }
 
 .skill .container .row div .div-i .fa-html5:hover {
-  transform: scale(2) rotate(360deg);
-  -webkit-transform: scale(2) rotate(360deg);
-  -moz-transform: scale(2) rotate(360deg);
-  -ms-transform: scale(2) rotate(360deg);
-  -o-transform: scale(2) rotate(360deg);
+  transform: scale(2) rotate(0deg);
+  -webkit-transform: scale(2) rotate(0deg);
+  -moz-transform: scale(2) rotate(0deg);
+  -ms-transform: scale(2) rotate(0deg);
+  -o-transform: scale(2) rotate(0deg);
   transition: 1s all ease-in-out;
   -webkit-transition: 1s all ease-in-out;
   -moz-transition: 1s all ease-in-out;
@@ -348,11 +348,11 @@
 }
 
 .skill .container .row div .div-i .fa-css3-alt:hover {
-  transform: scale(2) rotate(360deg);
-  -webkit-transform: scale(2) rotate(360deg);
-  -moz-transform: scale(2) rotate(360deg);
-  -ms-transform: scale(2) rotate(360deg);
-  -o-transform: scale(2) rotate(360deg);
+  transform: scale(2) rotate(0deg);
+  -webkit-transform: scale(2) rotate(0deg);
+  -moz-transform: scale(2) rotate(0deg);
+  -ms-transform: scale(2) rotate(0deg);
+  -o-transform: scale(2) rotate(0deg);
   transition: 1s all ease-in-out;
   -webkit-transition: 1s all ease-in-out;
   -moz-transition: 1s all ease-in-out;
@@ -362,11 +362,11 @@
 }
 
 .skill .container .row div .div-i .fa-js-square:hover {
-  transform: scale(2) rotate(360deg);
-  -webkit-transform: scale(2) rotate(360deg);
-  -moz-transform: scale(2) rotate(360deg);
-  -ms-transform: scale(2) rotate(360deg);
-  -o-transform: scale(2) rotate(360deg);
+  transform: scale(2) rotate(0deg);
+  -webkit-transform: scale(2) rotate(0deg);
+  -moz-transform: scale(2) rotate(0deg);
+  -ms-transform: scale(2) rotate(0deg);
+  -o-transform: scale(2) rotate(0deg);
   transition: 1s all ease-in-out;
   -webkit-transition: 1s all ease-in-out;
   -moz-transition: 1s all ease-in-out;
@@ -376,11 +376,11 @@
 }
 
 .skill .container .row div .div-i .fa-bootstrap:hover {
-  transform: scale(2) rotate(360deg);
-  -webkit-transform: scale(2) rotate(360deg);
-  -moz-transform: scale(2) rotate(360deg);
-  -ms-transform: scale(2) rotate(360deg);
-  -o-transform: scale(2) rotate(360deg);
+  transform: scale(2) rotate(0deg);
+  -webkit-transform: scale(2) rotate(0deg);
+  -moz-transform: scale(2) rotate(0deg);
+  -ms-transform: scale(2) rotate(0deg);
+  -o-transform: scale(2) rotate(0deg);
   transition: 1s all ease-in-out;
   -webkit-transition: 1s all ease-in-out;
   -moz-transition: 1s all ease-in-out;
@@ -390,11 +390,11 @@
 }
 
 .skill .container .row div .div-i .fa-sass:hover {
-  transform: scale(1.8) rotate(360deg);
-  -webkit-transform: scale(1.8) rotate(360deg);
-  -moz-transform: scale(1.8) rotate(360deg);
-  -ms-transform: scale(1.8) rotate(360deg);
-  -o-transform: scale(1.8) rotate(360deg);
+  transform: scale(1.7) rotate(0deg);
+  -webkit-transform: scale(1.7) rotate(0deg);
+  -moz-transform: scale(1.7) rotate(0deg);
+  -ms-transform: scale(1.7) rotate(0deg);
+  -o-transform: scale(1.7) rotate(0deg);
   transition: 1s all ease-in-out;
   -webkit-transition: 1s all ease-in-out;
   -moz-transition: 1s all ease-in-out;
@@ -404,11 +404,11 @@
 }
 
 .skill .container .row div .div-i .fa-git-alt:hover {
-  transform: scale(2) rotate(360deg);
-  -webkit-transform: scale(2) rotate(360deg);
-  -moz-transform: scale(2) rotate(360deg);
-  -ms-transform: scale(2) rotate(360deg);
-  -o-transform: scale(2) rotate(360deg);
+  transform: scale(2) rotate(0deg);
+  -webkit-transform: scale(2) rotate(0deg);
+  -moz-transform: scale(2) rotate(0deg);
+  -ms-transform: scale(2) rotate(0deg);
+  -o-transform: scale(2) rotate(0deg);
   transition: 1s all ease-in-out;
   -webkit-transition: 1s all ease-in-out;
   -moz-transition: 1s all ease-in-out;
@@ -446,11 +446,11 @@
 }
 
 .skill .container .row div .div-i .fa-figma:hover {
-  transform: scale(2) rotate(360deg);
-  -webkit-transform: scale(2) rotate(360deg);
-  -moz-transform: scale(2) rotate(360deg);
-  -ms-transform: scale(2) rotate(360deg);
-  -o-transform: scale(2) rotate(360deg);
+  transform: scale(2) rotate(0deg);
+  -webkit-transform: scale(2) rotate(0deg);
+  -moz-transform: scale(2) rotate(0deg);
+  -ms-transform: scale(2) rotate(0deg);
+  -o-transform: scale(2) rotate(0deg);
   transition: 1s all ease-in-out;
   -webkit-transition: 1s all ease-in-out;
   -moz-transition: 1s all ease-in-out;
@@ -462,6 +462,11 @@
 .skill .container .row div .div-i:hover {
   -webkit-box-shadow: 2px 3px 10px #48cae4;
           box-shadow: 2px 3px 10px #48cae4;
+}
+
+.skill .hiddenSkills {
+  position: absolute;
+  right: 25%;
 }
 
 .skill .hidSkills {
@@ -483,24 +488,24 @@
   -o-transition: 1s all ease-in-out;
   padding: 0px;
   color: #48cae4;
-  transition: 1.5s all ease-in-out;
-  -webkit-transition: 1.5s all ease-in-out;
-  -moz-transition: 1.5s all ease-in-out;
-  -ms-transition: 1.5s all ease-in-out;
-  -o-transition: 1.5s all ease-in-out;
 }
 
 .skill .outAnimacion {
-  transform: scale(0);
-  -webkit-transform: scale(0);
-  -moz-transform: scale(0);
-  -ms-transform: scale(0);
-  -o-transform: scale(0);
-  transition: 1.5s all ease-in-out;
-  -webkit-transition: 1.5s all ease-in-out;
-  -moz-transition: 1.5s all ease-in-out;
-  -ms-transition: 1.5s all ease-in-out;
-  -o-transition: 1.5s all ease-in-out;
+  transform: scale(0) rotate(0deg);
+  -webkit-transform: scale(0) rotate(0deg);
+  -moz-transform: scale(0) rotate(0deg);
+  -ms-transform: scale(0) rotate(0deg);
+  -o-transform: scale(0) rotate(0deg);
+  transition: 1s all ease-in-out;
+  -webkit-transition: 1s all ease-in-out;
+  -moz-transition: 1s all ease-in-out;
+  -ms-transition: 1s all ease-in-out;
+  -o-transition: 1s all ease-in-out;
+  padding: 0px;
+}
+
+.leyend {
+  font-size: 10px;
 }
 
 .projects {

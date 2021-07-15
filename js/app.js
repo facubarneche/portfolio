@@ -1,31 +1,35 @@
-const hidSkills = document.getElementById('js')
-const hiddenSkills = document.getElementsByClassName('skills');
-console.log(hiddenSkills)
+const hiddenSkills = document.querySelectorAll('.skills');
+const showSkills = document.querySelectorAll('.hiddenSkills');
 
-// const asd = () => {
-//     for (const i of hiddenSkills) {
+// for(let i=0; i<hiddenSkills.length; i++){
+//     hiddenSkills[i].addEventListener('mouseover',()=>{
 //         console.log(i)
-//         i.addEventListener('click', console.log('asd'))
-//     }
+//     })
 // }
-// asd();
 
+hiddenSkills.forEach(skill => {
+    skill.addEventListener('mouseover', () => {
 
-hidSkills.addEventListener('mouseover', () => {
-    const skill = document.getElementById('hiddenSkills');
-    skill.toggleAttribute('hidden');
-    setTimeout(() => {
-        skill.classList.remove('outAnimacion');
-        skill.classList.add('overAnimacion');
-    }, 0100);
-})
+        for (let i = 0; i < showSkills.length; i++) {
+            if (i == skill.id) {
+                showSkills[i].toggleAttribute('hidden');
+                setTimeout(() => {
+                    showSkills[i].classList.remove('outAnimacion');
+                    showSkills[i].classList.add('overAnimacion');
+                }, 0100);
+            }
+        }
+    });
 
-hidSkills.addEventListener('mouseout', () => {
-    const skill = document.getElementById('hiddenSkills');
-    skill.classList.remove('overAnimacion')
-    skill.classList.add('outAnimacion');
-    setTimeout(() => {
-        skill.toggleAttribute('hidden');
-    }, 1510);
-
+    skill.addEventListener('mouseout', () => {
+        for (let i = 0; i < showSkills.length; i++) {
+            if (i == skill.id) {
+                showSkills[i].classList.remove('overAnimacion')
+                showSkills[i].classList.add('outAnimacion');
+                setTimeout(() => {
+                    showSkills[i].toggleAttribute('hidden');
+                }, 1400);
+            }
+        }
+    })
 });
